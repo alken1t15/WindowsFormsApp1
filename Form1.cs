@@ -12,26 +12,26 @@ namespace WindowsFormsApp1
 {
     public partial class FormHome : Form
     {
-        public FormHome()
-        {
-            InitializeComponent();
-            queryString = "CREATE TABLE [dbo].[Students] (" +
-                                                           "[Id] BIGINT IDENTITY(1, 1) NOT NULL PRIMARY KEY," +
-                                                           "[Name] nvarchar(50) NOT NULL," +
-                                                           "[Surname] nvarchar(50) NOT NULL," +
-                                                           "[TestType] nvarchar(50) NULL," +
-                                                           "[Results] nvarchar(50) NULL," +
-                                                           ");";
-            serves.CreateCommand(queryString, connectionString);
-        }
+        bool isExists = false;
         Serves serves = new Serves();
         string queryString;
         string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Database=master;" +
                 "Integrated Security=True;";
+        public static string name, surname;
+        public FormHome()
+        {
+            InitializeComponent();
+           
+            
+            
+        }
+       
         private void buttonTest_Click(object sender, EventArgs e)
         {
             if (textBox_Name.Text != String.Empty && textBox_Surname.Text != String.Empty)
             {
+                name = textBox_Name.Text;
+                surname = textBox_Surname.Text;
                 label4.Visible = false;
                 queryString = "INSERT INTO Students (Name, Surname) VALUES ('" +
                         textBox_Name.Text + "', '" +
@@ -68,6 +68,27 @@ namespace WindowsFormsApp1
         {
             queryString = "DROP TABLE [dbo].[Students];";
             serves.CreateCommand(queryString, connectionString);
+        }
+
+        private void FormHome_Load(object sender, EventArgs e)
+        {
+            if (!isExists)
+            {
+                queryString = "CREATE TABLE [dbo].[Students] (" +
+                                                           "[Id] BIGINT IDENTITY(1, 1) NOT NULL PRIMARY KEY," +
+                                                           "[Name] nvarchar(50) NOT NULL," +
+                                                           "[Surname] nvarchar(50) NOT NULL," +
+                                                           "[TestType] nvarchar(50) NULL," +
+                                                           "[Results] nvarchar(50) NULL," +
+                                                           ");";
+                serves.CreateCommand(queryString, connectionString);
+                isExists = true;
+
+            }
+            else
+            {
+
+            }
         }
     }
 }

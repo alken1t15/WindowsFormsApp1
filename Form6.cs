@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
     public partial class FormTestTurizm : Form
     {
         int count;
+        string testType = "Tourism_1.1";
         public FormTestTurizm()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace WindowsFormsApp1
 
         private void buttonEndTest_Click(object sender, EventArgs e)
         {
-            FormTestFinalTurizm form   = new FormTestFinalTurizm(count);
+            FormTestFinalTurizm form = new FormTestFinalTurizm(count, testType);
             form.Show();
             this.Close();
         }
@@ -71,6 +72,11 @@ namespace WindowsFormsApp1
             {
                 count--;
             }
+        }
+
+        private void FormTestTurizm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
     public partial class FormTestDesign : Form
     {
         int count;
+        string testType = "Design_1.1";
         public FormTestDesign()
         {
             InitializeComponent();
@@ -68,9 +69,14 @@ namespace WindowsFormsApp1
 
         private void buttonEndTest_Click(object sender, EventArgs e)
         {
-            FormFinalTestDisign formFinalTestDisign = new FormFinalTestDisign(count);
+            FormFinalTestDisign formFinalTestDisign = new FormFinalTestDisign(count, testType);
             formFinalTestDisign.Show();
             this.Close();
+        }
+
+        private void FormTestDesign_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

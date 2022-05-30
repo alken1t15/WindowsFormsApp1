@@ -74,6 +74,7 @@
             this.Name = "FormFinalTestDisign";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.FormFinalTestDisign_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
     public partial class FormTestIt : Form
     {
         public int count;
+        string testType = "IT_1.1";
         public FormTestIt()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace WindowsFormsApp1
 
         private void buttonEndTest_Click(object sender, EventArgs e)
         {
-            FormTestEnd formTestEnd = new FormTestEnd(count);
+            FormTestEnd formTestEnd = new FormTestEnd(count, testType);
             formTestEnd.Show();
             this.Hide();
         }
@@ -71,6 +72,11 @@ namespace WindowsFormsApp1
             {
                 count--;
             }
+        }
+
+        private void FormTestIt_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

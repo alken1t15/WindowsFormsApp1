@@ -35,9 +35,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(112, 490);
+            this.button1.Location = new System.Drawing.Point(92, 187);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 58);
+            this.button1.Size = new System.Drawing.Size(164, 58);
             this.button1.TabIndex = 5;
             this.button1.Text = "Завершить";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,13 +67,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 608);
+            this.ClientSize = new System.Drawing.Size(341, 539);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormTestFinalTurizm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
+            this.Load += new System.EventHandler(this.FormTestFinalTurizm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

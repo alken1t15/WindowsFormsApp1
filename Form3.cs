@@ -12,6 +12,9 @@ namespace WindowsFormsApp1
 {
     public partial class FormStatictic : Form
     {
+        Serves serves = new Serves();
+        string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Database=master;" +
+                "Integrated Security=True;";
         public FormStatictic()
         {
             InitializeComponent();
@@ -34,7 +37,18 @@ namespace WindowsFormsApp1
 
         private void FormStatictic_Load(object sender, EventArgs e)
         {
+            this.dataGridView1.Columns.Add("Name", "Имя");
+            this.dataGridView1.Columns["Name"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
+            this.dataGridView1.Columns.Add("Surname", "Фамилия");
+            this.dataGridView1.Columns["Surname"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            this.dataGridView1.Columns.Add("TestType", "Тип теста");
+            this.dataGridView1.Columns["TestType"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            this.dataGridView1.Columns.Add("Results", "Результаты");
+            this.dataGridView1.Columns["Results"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            serves.SelectDataBase(connectionString, dataGridView1);
         }
     }
 }

@@ -88,7 +88,9 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
             this.Name = "FormStatictic";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.FormStatictic_Load);
             this.ResumeLayout(false);
 
         }

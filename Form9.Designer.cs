@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FormTestFinalTurizm
+    partial class FormFinalTestDisign
     {
         /// <summary>
         /// Required designer variable.
@@ -38,7 +38,7 @@
             this.button1.Location = new System.Drawing.Point(112, 490);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 58);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Завершить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -50,7 +50,7 @@
             this.label2.Location = new System.Drawing.Point(85, 61);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(171, 37);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Результат";
             // 
             // label1
@@ -60,10 +60,10 @@
             this.label1.Location = new System.Drawing.Point(129, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 28);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 6;
             this.label1.Text = "label1";
             // 
-            // FormTestFinalTurizm
+            // FormFinalTestDisign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,9 +71,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FormTestFinalTurizm";
+            this.Name = "FormFinalTestDisign";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form7";
+            this.Text = "Form9";
             this.ResumeLayout(false);
             this.PerformLayout();
 

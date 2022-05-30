@@ -25,9 +25,9 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void checkBoxTrue1_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonTrue1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxTrue1.Checked)
+            if (radioButtonTrue1.Checked)
             {
                 count++;
             }
@@ -37,9 +37,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void checkBoxTrue2_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonTrue2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxTrue2.Checked)
+            if (radioButtonTrue2.Checked)
             {
                 count++;
             }
@@ -49,9 +49,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void checkBoxTrue3_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonTrue3_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxTrue3.Checked)
+            if (radioButtonTrue3.Checked)
             {
                 count++;
             }
@@ -61,9 +61,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void checkBoxTrue4_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonTrue4_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxTrue4.Checked)
+            if (radioButtonTrue4.Checked)
             {
                 count++;
             }

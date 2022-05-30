@@ -31,5 +31,10 @@ namespace WindowsFormsApp1
             form.Show();
             this.Hide();
         }
+
+        private void FormStatictic_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

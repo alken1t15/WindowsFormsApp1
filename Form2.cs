@@ -44,5 +44,12 @@ namespace WindowsFormsApp1
             formTest.Show();
             this.Hide();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            FormTestDesign form = new FormTestDesign();
+            form.Show();
+            this.Close();
+        }
     }
 }

@@ -43,6 +43,16 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonSetting
@@ -205,11 +215,130 @@
             this.button9.Text = "Базовые принципы";
             this.button9.UseVisualStyleBackColor = false;
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Red;
+            this.button10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button10.Location = new System.Drawing.Point(263, 323);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(67, 62);
+            this.button10.TabIndex = 24;
+            this.button10.Text = "Базовые принципы";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Red;
+            this.button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button11.Location = new System.Drawing.Point(182, 323);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(67, 62);
+            this.button11.TabIndex = 23;
+            this.button11.Text = "Базовые принципы";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Red;
+            this.button12.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button12.Location = new System.Drawing.Point(93, 323);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(67, 62);
+            this.button12.TabIndex = 22;
+            this.button12.Text = "Базовые принципы";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Red;
+            this.button13.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button13.Location = new System.Drawing.Point(13, 323);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(67, 62);
+            this.button13.TabIndex = 21;
+            this.button13.Text = "Базовые знания";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label3.Location = new System.Drawing.Point(8, 284);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 25);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Дизайнер";
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Purple;
+            this.button14.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button14.Location = new System.Drawing.Point(263, 437);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(67, 62);
+            this.button14.TabIndex = 29;
+            this.button14.Text = "Базовые принципы";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Purple;
+            this.button15.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button15.Location = new System.Drawing.Point(182, 437);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(67, 62);
+            this.button15.TabIndex = 28;
+            this.button15.Text = "Базовые принципы";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.Purple;
+            this.button16.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button16.Location = new System.Drawing.Point(93, 437);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(67, 62);
+            this.button16.TabIndex = 27;
+            this.button16.Text = "Базовые принципы";
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.Purple;
+            this.button17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button17.Location = new System.Drawing.Point(13, 437);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(67, 62);
+            this.button17.TabIndex = 26;
+            this.button17.Text = "Базовые принципы";
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label5.Location = new System.Drawing.Point(8, 398);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 25);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Строительство";
+            // 
             // FormTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 608);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button16);
+            this.Controls.Add(this.button17);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -226,6 +355,7 @@
             this.Controls.Add(this.buttonTest);
             this.Controls.Add(this.button1);
             this.Name = "FormTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,5 +379,15 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label5;
     }
 }

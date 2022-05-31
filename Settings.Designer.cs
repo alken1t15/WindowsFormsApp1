@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.buttonTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_Clear
@@ -68,7 +69,7 @@
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(113, 496);
+            this.button6.Location = new System.Drawing.Point(81, 496);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(82, 45);
             this.button6.TabIndex = 24;
@@ -76,16 +77,30 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // buttonTest
+            // 
+            this.buttonTest.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonTest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonTest.Location = new System.Drawing.Point(171, 496);
+            this.buttonTest.Name = "buttonTest";
+            this.buttonTest.Size = new System.Drawing.Size(75, 45);
+            this.buttonTest.TabIndex = 25;
+            this.buttonTest.Text = "Тесты";
+            this.buttonTest.UseVisualStyleBackColor = false;
+            this.buttonTest.Click += new System.EventHandler(this.buttonTest_Click);
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(328, 563);
+            this.Controls.Add(this.buttonTest);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Clear);
             this.Name = "Settings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.Settings_Load);
             this.ResumeLayout(false);
@@ -99,5 +114,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonTest;
     }
 }

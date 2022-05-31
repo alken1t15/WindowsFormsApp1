@@ -5,13 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class Settings : Form
     {
+        bool isEntered = true;
         bool isExists = true;
         Serves serves = new Serves();
         string queryString;
@@ -40,6 +41,7 @@ namespace WindowsFormsApp1
                                                            ");";
             serves.CreateCommand(queryString, connectionString);
             isExists = true;
+            isEntered = false;
             MessageBox.Show("Сброс выполнен успешно!");
         }
 
@@ -47,13 +49,55 @@ namespace WindowsFormsApp1
         {
             queryString = "DELETE FROM Students WHERE Name = '" + FormHome.name + "';";
             serves.CreateCommand(queryString, connectionString);
+            isEntered = false;
+            MessageBox.Show("Пользователь успешно удален!");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            FormHome formHome = new FormHome(isExists);
-            formHome.Show();
-            this.Close();
+            if (!isEntered)
+            {
+                FormHome formHome = new FormHome(isExists);
+                formHome.Show();
+                this.Close();
+            }
+            else
+            {
+                string message = "Вы уверены, что хотите выйти? Главный экран откроется через 3 секунды!";
+                string caption = "Warning!";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                if (result == DialogResult.Yes)
+                {
+                    // Closes the parent form.
+                    Thread.Sleep(3000);
+                    FormHome formHome = new FormHome(isExists);
+                    formHome.Show();
+                    this.Close();
+                }
+            }
+        }
+
+        private void buttonTest_Click(object sender, EventArgs e)
+        {
+            if (isEntered)
+            {
+                FormTest formTest = new FormTest();
+                formTest.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Данные текущего пользователя были удалены или статистика была сброшена! Вас перекинет на главный экран для повторного входа.");
+                Thread.Sleep(1500);
+                FormHome formHome = new FormHome(isExists);
+                formHome.Show();
+                this.Close();
+            }
+            
         }
     }
 }

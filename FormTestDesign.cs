@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
 
         private void radioButtonTrue2_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonTrue1.Checked)
+            if (radioButtonTrue2.Checked)
             {
                 count++;
             }
@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
 
         private void radioButtonTrue3_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonTrue1.Checked)
+            if (radioButtonTrue3.Checked)
             {
                 count++;
             }
@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
 
         private void radioButtonTrue4_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonTrue1.Checked)
+            if (radioButtonTrue4.Checked)
             {
                 count++;
             }

@@ -72,23 +72,30 @@ namespace WindowsFormsApp1
 
         private void FormHome_Load(object sender, EventArgs e)
         {
-            if (!isExists)
+            try
             {
-                queryString = "CREATE TABLE [dbo].[Students] (" +
-                                                           "[Id] BIGINT IDENTITY(1, 1) NOT NULL PRIMARY KEY," +
-                                                           "[Name] nvarchar(50) NOT NULL," +
-                                                           "[Surname] nvarchar(50) NOT NULL," +
-                                                           "[TestType] nvarchar(50) NULL," +
-                                                           "[Results] nvarchar(50) NULL," +
-                                                           ");";
-                serves.CreateCommand(queryString, connectionString);
-                isExists = true;
+                if (!isExists)
+                {
+                    queryString = "CREATE TABLE [dbo].[Students] (" +
+                                                               "[Id] BIGINT IDENTITY(1, 1) NOT NULL PRIMARY KEY," +
+                                                               "[Name] nvarchar(50) NOT NULL," +
+                                                               "[Surname] nvarchar(50) NOT NULL," +
+                                                               "[TestType] nvarchar(50) NULL," +
+                                                               "[Results] nvarchar(50) NULL," +
+                                                               ");";
+                    serves.CreateCommand(queryString, connectionString);
+                    isExists = true;
 
-            }
-            else
+                }
+                else
+                {
+
+                }
+            }catch(Exception ex)
             {
-
+                MessageBox.Show("Таблица уже создана!");
             }
+            
         }
     }
 }

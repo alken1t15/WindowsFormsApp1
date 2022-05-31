@@ -45,14 +45,6 @@ namespace WindowsFormsApp1
             MessageBox.Show("Сброс выполнен успешно!");
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            queryString = "DELETE FROM Students WHERE Name = '" + FormHome.name + "';";
-            serves.CreateCommand(queryString, connectionString);
-            isEntered = false;
-            MessageBox.Show("Пользователь успешно удален!");
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             if (!isEntered)

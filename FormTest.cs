@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class FormTest : Form
     {
+        bool isExists = true;
         public FormTest()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormHome form = new FormHome();
+            FormHome form = new FormHome(isExists);
             form.Show();
             this.Hide();
         }
@@ -49,6 +50,13 @@ namespace WindowsFormsApp1
         {
             FormTestDesign form = new FormTestDesign();
             form.Show();
+            this.Close();
+        }
+
+        private void buttonSetting_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Show();
             this.Close();
         }
     }

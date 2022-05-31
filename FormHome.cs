@@ -22,8 +22,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             isExists = _isExists;
-
-
         }
 
         private void buttonTest_Click(object sender, EventArgs e)
@@ -93,7 +91,7 @@ namespace WindowsFormsApp1
                 }
             }catch(Exception ex)
             {
-                MessageBox.Show("Таблица уже создана!");
+                MessageBox.Show("Добро пожаловать! Ваша база данных подготовлена к работе!");
             }
             
         }
